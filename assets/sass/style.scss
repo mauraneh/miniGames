@@ -1,0 +1,94 @@
+@import "_reset";
+@import "_variables";
+
+.displaynone {
+  display: none;
+}
+.displayblock {
+  display: block;
+}
+
+body {
+  max-width: 750px;
+  font-family: Dense;
+  width: 100%;
+  margin: 0 auto;
+  backdrop-filter: blur(2px);
+  background-image: url("https://picsum.photos/id/56/860");
+}
+header {
+  font-size: 3rem;
+  padding: 2rem 3rem;
+  h1 {
+    font-size: 4rem;
+    padding: 1rem;
+    color: $color-grey-lighter;
+  }
+}
+.menu {
+    width: 100%;
+    background-color: rgba(112, 112, 112, 0.403);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+  .menu-main {
+    font-size: 3rem;
+    padding: 3rem 0;
+
+    @include displayFlexColumn;
+   
+    a {
+      color: $color-dark-title;
+    }
+  }
+}
+
+.sub-menu {
+  font-size: 2rem;
+  button {
+    border: none;
+    background-color: transparent;
+    i {
+      font-size: 2rem;
+    }
+  }
+}
+.modalXmas{
+    display: none;
+}
+
+.modal-xmas {
+    @include displayFlexAround;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.652);
+    padding: 1rem 2rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+    #cross{
+        i{
+            font-size: 2rem;
+        }  
+    }
+}
+.dayBeforeXmas {
+    color: $color-purple-basic;
+    background-color: opacity($color: #ffffffa0);
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 0.04rem;
+  }
+
+footer {
+  background-color: $color-grey-lighter;
+  position: sticky;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  ul {
+    font-size: 2rem;
+    padding: 1rem;
+    @include displayFlexAround;
+  }
+}

@@ -1,0 +1,42 @@
+// FONT
+@font-face {
+    font-family: 'Dense';
+    src: url(../font/Dense-Regular/Dense-Regular.otf);
+}
+
+// COLOR
+$color-grey-darker: #626567;
+$color-grey-medium: #717D7E;
+$color-grey-light: #CACFD2;
+$color-grey-lighter: #e5e7e965 ;
+
+$color-red-basic: #E74C3C;
+$color-green-basic: #27AE60;
+$color-blue-basic: #3498DB;
+$color-yellow-basic: #F4D03F ;
+$color-purple-basic: #6944ad;
+
+$color-dark-title: #000;
+
+// MIXIN
+@mixin displayFlexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin displayFlexBetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin displayFlexColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin displayFlexAround{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

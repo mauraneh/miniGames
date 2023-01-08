@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/4676f47122.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Games</title>
+  </head>
+  <body>
+    <header>
+      <div><h1>Game on</h1></div>
+      <nav>
+        <ul class="menu">
+          <li class="menu-main" id="home"><a href="#">Home</a></li>
+          <li class="menu-main" id="about"><a href="#">About</a></li>
+          <li class="menu-main" id="games">
+            <a href="#">Games</a>
+            <ul class="sub-menu displaynone">
+              <li class="menu-item">
+                <a href="#">Red Light</a>
+              </li>
+              <li class="menu-item">
+                <a class="daysBeforeXmas" href="#">Days before xmas</a>
+              </li>
+              <li class="menu-item">
+                <a href="#">Animation</a>
+              </li>
+              <li class="menu-item">
+                <a href="#">Pictures</a>
+              </li>
+              <button onclick="closeWindow()">
+                <i id="close" class="fa-regular fa-circle-xmark"></i>
+              </button>
+            </ul>
+          </li>
+          <li class="menu-main" id="contact"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="modalXmas">
+        <div class="modal-xmas">
+          <div class="dayBeforeXmas"></div>
+          <div id="cross"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+      </div>
+    </header>
+
+    <footer>
+      <ul class="copyright">
+        <li><i class="fa-brands fa-instagram"></i></li>
+        <li><i class="fa-brands fa-pinterest-p"></i></li>
+        <li><i class="fa-brands fa-github"></i></li>
+      </ul>
+    </footer>
+    <script type="module" src="assets/js/script.js"></script>
+  </body>
+</html>
